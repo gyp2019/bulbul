@@ -1,13 +1,28 @@
 <template>
   <div class="container">
     ya
-    <div class="row">
-      <template v-for="({ name, siteUrl }, index) in list">
-        <div class="col-3" :key="index">
-          {{ name }}
-        </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>토렌트명</th>
+          <th>사이트주소</th>
+          <th>야슐랭</th>
+          <th>특징</th>
+          <th>언어</th>
+          <th>회원제</th>
+        </tr>
+      </thead>
+      <template v-for="({ name, siteUrl, bochelinGuide, features, languages, membership }, index) in list">
+        <tr :key="index">
+          <td>{{ name }}</td>
+          <td>{{ siteUrl }}</td>
+          <td>{{ bochelinGuide }}</td>
+          <td>{{ features }}</td>
+          <td>{{ languages }}</td>
+          <td>{{ membership ? '회원제' : '비회원' }}</td>
+        </tr>
       </template>
-    </div>
+    </table>
   </div>
 </template>
 
