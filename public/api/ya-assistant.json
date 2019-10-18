@@ -1,0 +1,10 @@
+[
+  {
+    "name": "토렌트왈",
+    "siteUrl": "https://xxx.com",
+    "bochelinGuide": 3,
+    "features": ["트위터", "광고최소", "한눈에 보임", "모바일 용", "SNI차단", "VPN연결필요"],
+    "languages": ["En", "Ko"],
+    "membership": false
+  }
+]
