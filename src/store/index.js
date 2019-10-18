@@ -1,5 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+import yachelinGuide from './modules/yachelinGuide';
 
 Vue.use(Vuex)
 
@@ -11,5 +13,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-  }
-})
+    yachelinGuide,
+  },
+});
