@@ -5,7 +5,17 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   name: 'yachelinGuide',
+  methods: {
+    ...mapActions('yachelinGuide', [
+      'requestList',
+    ]),
+  },
+  mounted() {
+    this.requestList();
+  },
 };
 </script>

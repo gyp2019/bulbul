@@ -1,8 +1,32 @@
 [
   {
     "name": "토렌트왈",
-    "siteUrl": "https://xxx.com",
+    "siteUrl": "https://torrentwal.com",
     "bochelinGuide": 3,
+    "features": ["트위터", "광고최소", "한눈에 보임", "모바일 용", "SNI차단", "VPN연결필요"],
+    "languages": ["En", "Ko"],
+    "membership": false
+  },
+  {
+    "name": "토렌트큐큐",
+    "siteUrl": "https://torrentqq2.com",
+    "bochelinGuide": 3,
+    "features": ["트위터", "광고최소", "한눈에 보임", "모바일 용", "SNI차단", "VPN연결필요"],
+    "languages": ["En", "Ko"],
+    "membership": false
+  },
+  {
+    "name": "토파일",
+    "siteUrl": "https://tofiles5.net",
+    "bochelinGuide": 3,
+    "features": ["트위터", "광고최소", "한눈에 보임", "모바일 용", "SNI차단", "VPN연결필요"],
+    "languages": ["En", "Ko"],
+    "membership": false
+  },
+  {
+    "name": "토렌트하자",
+    "siteUrl": "https://torrenthaja11.com",
+    "bochelinGuide": 2,
     "features": ["트위터", "광고최소", "한눈에 보임", "모바일 용", "SNI차단", "VPN연결필요"],
     "languages": ["En", "Ko"],
     "membership": false
