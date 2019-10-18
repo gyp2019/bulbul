@@ -1,8 +1,8 @@
 import api from '@/api';
 import {
-  REQUEST_LIST__YACHELIN_GUIDE,
-  RECEIVE_LIST__YACHELIN_GUIDE,
-  FAILURE_LIST__YACHELIN_GUIDE,
+  REQUEST_LIST__BOCHELIN_GUIDE,
+  RECEIVE_LIST__BOCHELIN_GUIDE,
+  FAILURE_LIST__BOCHELIN_GUIDE,
 } from '@/store/mutation-types';
 
 const state = {
@@ -15,14 +15,14 @@ const getters = {
 };
 
 const mutations = {
-  [REQUEST_LIST__YACHELIN_GUIDE] (state) {
+  [REQUEST_LIST__BOCHELIN_GUIDE] (state) {
     state.loading = true;
   },
-  [RECEIVE_LIST__YACHELIN_GUIDE] (state, data) {
+  [RECEIVE_LIST__BOCHELIN_GUIDE] (state, data) {
     state.list = [ ...data ];
     state.loading = false;
   },
-  [FAILURE_LIST__YACHELIN_GUIDE] (state, error) {
+  [FAILURE_LIST__BOCHELIN_GUIDE] (state, error) {
     state.error = { ...error };
     state.loading = false;
   },
@@ -34,10 +34,10 @@ const actions = {
       return;
     }
 
-    commit(REQUEST_LIST__YACHELIN_GUIDE);
-    api.get('/ya-assistant.json').then(
-      response => commit(RECEIVE_LIST__YACHELIN_GUIDE, response.data),
-      error => commit(FAILURE_LIST__YACHELIN_GUIDE, error.response.data),
+    commit(REQUEST_LIST__BOCHELIN_GUIDE);
+    api.get('/bo-assistant.json').then(
+      response => commit(RECEIVE_LIST__BOCHELIN_GUIDE, response.data),
+      error => commit(FAILURE_LIST__BOCHELIN_GUIDE, error.response.data),
     );
   },
 };

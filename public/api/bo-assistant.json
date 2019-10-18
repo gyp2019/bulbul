@@ -1,10 +1,110 @@
 [
   {
-    "name": "토렌트왈",
-    "siteUrl": "https://xxx.com",
-    "bochelinGuide": 3,
-    "features": ["트위터", "광고최소", "한눈에 보임", "모바일 용", "SNI차단", "VPN연결필요"],
-    "languages": ["En", "Ko"],
-    "membership": false
+    "nameEn": "Ren Ayase",
+    "nameJp": "綾瀬れん",
+    "nameKo": "아야세 렌",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Ren Ootsuka",
+    "nameJp": "大塚れん",
+    "nameKo": "오오츠카 렌",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Rui Saotome",
+    "nameJp": "早乙女ルイ",
+    "nameKo": "사오토메 루이",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Risa Kasumi",
+    "nameJp": "かすみりさ",
+    "nameKo": "카스미 리사",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Mana Sakura",
+    "nameJp": "紗倉まな",
+    "nameKo": "사쿠라 마나",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Mei Matumoto",
+    "nameJp": "松本メイ",
+    "nameKo": "마츠모토 메이",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Tsukasa Aoi",
+    "nameJp": "葵つかさ",
+    "nameKo": "아오이 츠카사",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Yume Kana",
+    "nameJp": "由愛可奈",
+    "nameKo": "유메 카나",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Kana Miyashita",
+    "nameJp": "宮下華奈",
+    "nameKo": "미야시타 카나",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Haruka Hoshino",
+    "nameJp": "星野遥",
+    "nameKo": "호시노 하루카",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Iroha Natsume",
+    "nameJp": "夏目彩春",
+    "nameKo": "나츠메 이로하",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Aki Sasaki",
+    "nameJp": "佐々木あき",
+    "nameKo": "사사키 아키",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Yuri Sasahara",
+    "nameJp": "紗々原ゆり",
+    "nameKo": "사사하라 유리",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Chitose Hara",
+    "nameJp": "原ちとせ",
+    "nameKo": "하라 치토세",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Nanami Kawakami",
+    "nameJp": "川上奈々美",
+    "nameKo": "카와카미 나나미",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "Mari Sano",
+    "nameJp": "佐野まり",
+    "nameKo": "사노 마리",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "",
+    "nameJp": "",
+    "nameKo": "",
+    "imageUrl": ""
+  },
+  {
+    "nameEn": "",
+    "nameJp": "松永さな",
+    "nameKo": "",
+    "imageUrl": ""
   }
 ]

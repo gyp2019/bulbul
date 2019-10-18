@@ -2,9 +2,9 @@
   <div class="container">
     ya
     <div class="row">
-      <template v-for="({ name, siteUrl }, index) in list">
+      <template v-for="({ nameJp }, index) in list">
         <div class="col-3" :key="index">
-          {{ name }}
+          {{ nameJp }}
         </div>
       </template>
     </div>
@@ -15,14 +15,14 @@
 import { mapState, mapActions } from 'vuex';
 
 export default {
-  name: 'yachelinGuide',
+  name: 'bochelinGuide',
   computed: {
-    ...mapState('yachelinGuide', [
+    ...mapState('bochelinGuide', [
       'list',
     ]),
   },
   methods: {
-    ...mapActions('yachelinGuide', [
+    ...mapActions('bochelinGuide', [
       'requestList',
     ]),
   },

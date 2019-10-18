@@ -2,8 +2,9 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 import yachelinGuide from './modules/yachelinGuide';
+import bochelinGuide from './modules/bochelinGuide';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -14,5 +15,6 @@ export default new Vuex.Store({
   },
   modules: {
     yachelinGuide,
+    bochelinGuide,
   },
 });
