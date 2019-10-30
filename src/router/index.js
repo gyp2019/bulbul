@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import Home from '../views/Home.vue';
+import TochelinGuide from '../views/TochelinGuide.vue';
 import YachelinGuide from '../views/YachelinGuide.vue';
 import BochelinGuide from '../views/BochelinGuide.vue';
 
@@ -12,6 +13,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home,
+  },
+  {
+    path: '/tochelin-guide',
+    name: 'Tochelin_Guide',
+    component: TochelinGuide,
   },
   {
     path: '/yachelin-guide',
