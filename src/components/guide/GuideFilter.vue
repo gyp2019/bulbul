@@ -8,7 +8,11 @@
     </button>
 
     <div v-if="openedBox" class="px-3">
-      <GuideFilterCheckbox/>
+      <GuideFilterCheckbox
+        :legend="filters[0].legend"
+        :group="filters[0].group"
+        :value="[]"
+      />
     </div>
   </div>
 </template>
@@ -30,6 +34,7 @@ export default {
             { label: '비회원제', value: 'false' },
             { label: '회원제', value: 'true' },
           ],
+          filter: 'membership',
         },
         {
           legend: '자석',
@@ -39,6 +44,9 @@ export default {
           ],
         },
       ],
+      values: {
+        membership: [],
+      },
       openedBox: false,
     };
   },
