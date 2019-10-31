@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    ya
+    <GuideFilter/>
     <table class="table">
       <thead>
         <tr>
@@ -28,9 +28,13 @@
 
 <script>
 import { mapState, mapActions } from 'vuex';
+import GuideFilter from '@/components/guide/GuideFilter.vue';
 
 export default {
   name: 'TochelinGuide',
+  components: {
+    GuideFilter,
+  },
   computed: {
     ...mapState('tochelinGuide', [
       'list',
