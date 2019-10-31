@@ -1,33 +1,19 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Home from '../views/Home.vue';
 import TochelinGuide from '../views/TochelinGuide.vue';
-import YachelinGuide from '../views/YachelinGuide.vue';
-import BochelinGuide from '../views/BochelinGuide.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home,
+    redirect: { name: 'Tochelin_Guide' },
   },
   {
-    path: '/tochelin-guide',
+    path: '/guide',
     name: 'Tochelin_Guide',
     component: TochelinGuide,
-  },
-  {
-    path: '/yachelin-guide',
-    naem: 'Yachelin_Guide',
-    component: YachelinGuide,
-  },
-  {
-    path: '/bochelin-guide',
-    naem: 'Bochelin_Guide',
-    component: BochelinGuide,
   },
 ];
 
