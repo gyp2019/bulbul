@@ -50,9 +50,7 @@ const getters = {
    */
   filteredNations(state) {
     return _.map(state.filters, (group, key) => {
-      return {
-        [key]: _.pluck(_.where(group, {checked: true}), 'key'),
-      };
+      return { [key]: _.pluck(_.where(group, {checked: true}), 'key') };
     });
   },
 };
