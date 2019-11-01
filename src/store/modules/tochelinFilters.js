@@ -35,24 +35,17 @@ const getters = {
   //   const { magnetic } = state.filterArray;
   //   return _.filter(list, el => !magnetic.length || magnetic.includes(el.magnetic));
   // },
-  // filtered() {
-  //   const { list, filterArray } = state;
-  //   return _.filter(list, (el) => {
-  //     return _.every(filterArray, (values, key) => !values.length || values.includes(el[key]));
-  //   });
-  // },
-  /**
-   * {
-   *   membersip: ['false', 'true'],
-   *   magnetic: [],
-   *   nation: ['SCT', 'IRL', 'JPN'],
-   * }
-   */
-  filteredNations(state) {
+  filters(state) {
     return _.map(state.filters, (group, key) => {
       return { [key]: _.pluck(_.where(group, {checked: true}), 'key') };
     });
   },
+  filtering(state, getters) {
+    return _.filter(state.list, (el) => {
+      return _.every(getters.filters, (values, key) => !values.length || values.includes(el[key]));
+    });
+  },
+
 };
 
 const mutations = {
