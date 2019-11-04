@@ -5,13 +5,13 @@ import _ from 'underscore';
 
 
 const state = {
-  membersip: [
-    { checked: true, key: 'false', label: '비회원제' },
-    { checked: true, key: 'true', label: '회원제' },
+  membership: [
+    { checked: true, key: false, label: '비회원제' },
+    { checked: true, key: true, label: '회원제' },
   ],
-  magnetic: [
-    { checked: false, key: 'false', label: '자석없음' },
-    { checked: false, key: 'true', label: '자석포함' },
+  magnet: [
+    { checked: false, key: false, label: '자석없음' },
+    { checked: false, key: true, label: '자석포함' },
   ],
   status: [
     { checked: false, key: 'stop', label: '정지' },

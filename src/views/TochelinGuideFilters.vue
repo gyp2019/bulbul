@@ -3,14 +3,14 @@
     TochelinGuideFilters
     <FiltersCheckbox
       legend="회원방식"
-      name="membersip"
-      :filters="membersip"
+      name="membership"
+      :filters="membership"
       @input-checkbox="toggleFilter"
     />
     <FiltersCheckbox
       legend="자석포함"
-      name="magnetic"
-      :filters="magnetic"
+      name="magnet"
+      :filters="magnet"
       @input-checkbox="toggleFilter"
     />
     <FiltersCheckbox
@@ -34,8 +34,8 @@ export default {
   },
   computed: {
     ...mapState('tochelinGuide/filters', [
-      'membersip',
-      'magnetic',
+      'membership',
+      'magnet',
       'status',
     ]),
   },
