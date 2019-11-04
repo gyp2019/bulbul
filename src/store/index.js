@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import tochelinFilters from './modules/tochelinFilters';
+// import tochelinFilters from './modules/tochelinFilters';
 import tochelinGuide from './modules/tochelinGuide';
 import yachelinGuide from './modules/yachelinGuide';
 import bochelinGuide from './modules/bochelinGuide';
@@ -16,7 +16,7 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    tochelinFilters,
+    // tochelinFilters,
     tochelinGuide,
     yachelinGuide,
     bochelinGuide,

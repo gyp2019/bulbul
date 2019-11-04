@@ -4,6 +4,8 @@ import {
   RECEIVE_LIST__TOCHELIN_GUIDE,
   FAILURE_LIST__TOCHELIN_GUIDE,
 } from '@/store/mutation-types';
+import filters from './tochelinGuideFilters';
+import _ from 'underscore';
 
 const state = {
   list: [],
@@ -12,6 +14,11 @@ const state = {
 };
 
 const getters = {
+  filteredList(state, getters) {
+    return _.filter(state.list, (el) => {
+      return _.every(getters['filters/checkedfilters'], (values, key) => !values.length || values.includes(el[key]));
+    });
+  },
 };
 
 const mutations = {
@@ -48,4 +55,7 @@ export default {
   getters,
   mutations,
   actions,
+  modules: {
+    filters,
+  },
 };

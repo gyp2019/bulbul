@@ -49,8 +49,12 @@ const getters = {
 };
 
 const mutations = {
-  [TOGGLE_FILTER__TOCHELIN_FILTER] (state, { key, code, checked }) {
-    state.filters[key][code] = checked;
+  // [TOGGLE_FILTER__TOCHELIN_FILTER] (state, { key, code, checked }) {
+  //   state.filters[key][code] = checked;
+  // },
+  [TOGGLE_FILTER__TOCHELIN_FILTER] (state, { code, key, checked }) {
+    const filter = _.find(state.filters[code], (el) => key === el.key);
+    filter.checked = checked;
   },
 };
 

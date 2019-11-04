@@ -9,7 +9,7 @@
 
     <div v-if="openedBox" class="px-3">
       <GuideFilterCheckbox
-        :legend="filters[0].legend"
+        :legend="운영방식"
         :group="filters[0].group"
         :value="[]"
       />
@@ -27,23 +27,6 @@ export default {
   },
   data() {
     return {
-      filters: {
-        membership: [
-          { checked: false, key: 'false', label: '비회원제' },
-          { checked: false, key: 'true', label: '회원제' },
-        ],
-        magnetic: [
-          { checked: false, key: 'false', label: '자석없음' },
-          { checked: false, key: 'true', label: '자석포함' },
-        ],
-        nations: [
-          { checked: false, key: 'scotch', label: '스카치' },
-          { checked: false, key: 'irish', label: '아이리쉬' },
-          { checked: false, key: 'canadian', label: '캐내디언' },
-          { checked: false, key: 'american', label: '어메리칸' },
-          { checked: false, key: 'japanese', label: '재팬니즈' },
-        ],
-      },
       openedBox: false,
     };
   },

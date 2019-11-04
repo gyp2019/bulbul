@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <GuideFilter/>
+    <TochelinGuideFilters/>
     <table class="table">
       <thead>
         <tr>
@@ -10,9 +10,10 @@
           <th>광고</th>
           <th>성인</th>
           <th>신규</th>
+          <th>상태</th>
         </tr>
       </thead>
-      <template v-for="(item, index) in list">
+      <template v-for="(item, index) in filteredList">
         <tr :key="index">
           <td>{{ item.toTitle }}</td>
           <td>{{ item.membership ? '회원제' : '비회원제' }}</td>
@@ -20,6 +21,7 @@
           <td>{{ item.nonCommercial ? '광고X' : '광고O' }}</td>
           <td>{{ item.adultContents ? '성인X' : '성인O' }}</td>
           <td>{{ item.rookie ? '신규' : '기존' }}</td>
+          <td>{{ item.status }}</td>
         </tr>
       </template>
     </table>
@@ -27,17 +29,20 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
-import GuideFilter from '@/components/guide/GuideFilter.vue';
+import { mapState, mapActions, mapGetters } from 'vuex';
+import TochelinGuideFilters from './TochelinGuideFilters.vue';
 
 export default {
   name: 'TochelinGuide',
   components: {
-    GuideFilter,
+    TochelinGuideFilters,
   },
   computed: {
     ...mapState('tochelinGuide', [
       'list',
+    ]),
+    ...mapGetters('tochelinGuide', [
+      'filteredList',
     ]),
   },
   methods: {
