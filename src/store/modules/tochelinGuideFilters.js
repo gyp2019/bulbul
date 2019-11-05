@@ -16,7 +16,7 @@ const state = {
   status: [
     { checked: false, key: 'stop', label: '정지' },
     { checked: false, key: 'pause', label: '일시정지' },
-    { checked: false, key: 'run', label: '운행' },
+    { checked: false, key: 'run', label: '운영' },
   ],
 };
 

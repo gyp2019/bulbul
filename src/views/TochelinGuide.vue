@@ -21,7 +21,7 @@
           <td>{{ item.nonCommercial ? '광고X' : '광고O' }}</td>
           <td>{{ item.adultContents ? '성인X' : '성인O' }}</td>
           <td>{{ item.rookie ? '신규' : '기존' }}</td>
-          <td>{{ item.status }}</td>
+          <td>{{ item.status | status }}</td>
         </tr>
       </template>
     </table>
