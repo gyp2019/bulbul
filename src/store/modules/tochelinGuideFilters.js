@@ -13,6 +13,18 @@ const state = {
     { checked: false, key: false, label: '자석없음' },
     { checked: false, key: true, label: '자석포함' },
   ],
+  nonCommercial: [
+    { checked: false, key: false, label: '자석없음' },
+    { checked: false, key: true, label: '자석포함' },
+  ],
+  adultContents: [
+    { checked: false, key: false, label: '자석없음' },
+    { checked: false, key: true, label: '자석포함' },
+  ],
+  rookie: [
+    { checked: false, key: false, label: '자석없음' },
+    { checked: false, key: true, label: '자석포함' },
+  ],
   status: [
     { checked: false, key: 'stop', label: '정지' },
     { checked: false, key: 'pause', label: '일시정지' },
