@@ -5,7 +5,7 @@
       <thead>
         <tr>
           <th>토렌트</th>
-          <th>회원제</th>
+          <th>회원방식</th>
           <th>자석</th>
           <th>광고</th>
           <th>성인</th>
