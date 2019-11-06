@@ -14,13 +14,13 @@
         @input-checkbox="toggleFilter"
       />
       <FiltersCheckbox
-        legend="자석포함"
+        legend="자석"
         name="magnet"
         :filters="magnet"
         @input-checkbox="toggleFilter"
       />
       <FiltersCheckbox
-        legend="광고포함"
+        legend="광고"
         name="nonCommercial"
         :filters="nonCommercial"
         @input-checkbox="toggleFilter"
