@@ -6,24 +6,24 @@ import _ from 'underscore';
 
 const state = {
   membership: [
-    { checked: true, key: false, label: '비회원제' },
-    { checked: true, key: true, label: '회원제' },
+    { checked: false, key: false, label: '비회원제' },
+    { checked: false, key: true, label: '회원제' },
   ],
   magnet: [
     { checked: false, key: false, label: '자석없음' },
     { checked: false, key: true, label: '자석포함' },
   ],
   nonCommercial: [
-    { checked: false, key: false, label: '자석없음' },
-    { checked: false, key: true, label: '자석포함' },
+    { checked: false, key: false, label: '광고포함' },
+    { checked: false, key: true, label: '광고없음' },
   ],
   adultContents: [
-    { checked: false, key: false, label: '자석없음' },
-    { checked: false, key: true, label: '자석포함' },
+    { checked: false, key: false, label: '성인X' },
+    { checked: false, key: true, label: '성인O' },
   ],
   rookie: [
-    { checked: false, key: false, label: '자석없음' },
-    { checked: false, key: true, label: '자석포함' },
+    { checked: false, key: false, label: '기존' },
+    { checked: false, key: true, label: '신규' },
   ],
   status: [
     { checked: false, key: 'stop', label: '정지' },
