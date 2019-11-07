@@ -15,6 +15,11 @@ const routes = [
     name: 'Tochelin_Guide',
     component: TochelinGuide,
   },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AdminView.vue'),
+  },
 ];
 
 const router = new VueRouter({
