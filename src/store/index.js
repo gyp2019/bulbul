@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 import tochelinGuide from './modules/tochelinGuide';
+import tochelinGuideFiltersMap from './modules/tochelinGuideFiltersMap';
 import yachelinGuide from './modules/yachelinGuide';
 import bochelinGuide from './modules/bochelinGuide';
 
@@ -16,6 +17,7 @@ export default new Vuex.Store({
   },
   modules: {
     tochelinGuide,
+    tochelinGuideFiltersMap,
     yachelinGuide,
     bochelinGuide,
   },

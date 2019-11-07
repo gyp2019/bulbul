@@ -2,13 +2,13 @@
   <table class="table">
     <thead>
       <tr>
-        <th>토렌트</th>
-        <th>회원방식</th>
-        <th>자석</th>
-        <th>광고</th>
-        <th>성인</th>
-        <th>신규</th>
-        <th>상태</th>
+        <th>토렌트 filters.toTitle.name</th>
+        <th>회원방식 filters.membership.name</th>
+        <th>마그넷 filters.magnet.name</th>
+        <th>광고 filters.nonCommercial.name</th>
+        <th>성인 filters.adultContents.name</th>
+        <th>신규 filters.rookie.name</th>
+        <th>상태 filters.status.name</th>
       </tr>
     </thead>
     <template v-for="(item, index) in list">
