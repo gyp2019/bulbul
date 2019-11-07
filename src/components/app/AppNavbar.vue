@@ -6,6 +6,7 @@
       <router-link class="nav-item nav-link" active-class="active" to="films">films</router-link>
       <router-link class="nav-item nav-link" active-class="active" to="actress">actress</router-link>
       <router-link class="nav-item nav-link" active-class="active" to="about">about</router-link>
+      <router-link class="nav-item nav-link" active-class="active" to="admin">admin</router-link>
     </ul>
   </nav>
 </template>
