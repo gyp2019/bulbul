@@ -7,29 +7,29 @@
       Filter {{ openedFiltersBox ? '&#x025B3;' : '&#x025BD;' }}
     </button>
     <div v-if="openedFiltersBox" class="p-3">
-      <FiltersCheckbox
-        legend="회원방식"
-        name="membership"
-        :filters="membership"
-        @input-checkbox="toggleFilter"
+      <!-- <FiltersCheckbox
+        id="membership"
+        :legend="membership.name"
+        :filters="membership.filters"
+        @input-checkbox="setFilter"
+      /> -->
+      <FiltersButtons
+        id="magnet"
+        :legend="magnet.name"
+        :filters="magnet.filters"
+        @set-filter="setFilter"
       />
-      <FiltersCheckbox
-        legend="자석"
-        name="magnet"
-        :filters="magnet"
-        @input-checkbox="toggleFilter"
+      <FiltersButtons
+        id="nonCommercial"
+        :legend="nonCommercial.name"
+        :filters="nonCommercial.filters"
+        @set-filter="setFilter"
       />
-      <FiltersCheckbox
-        legend="광고"
-        name="nonCommercial"
-        :filters="nonCommercial"
-        @input-checkbox="toggleFilter"
-      />
-      <FiltersCheckbox
-        legend="운영상태"
-        name="status"
-        :filters="status"
-        @input-checkbox="toggleFilter"
+      <FiltersButtons
+        id="status"
+        :legend="status.name"
+        :filters="status.filters"
+        @set-filter="setFilter"
       />
     </div>
   </div>
@@ -37,13 +37,15 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex';
-import { TOGGLE_FILTER__TOCHELIN_GUIDE_FILTERS } from '@/store/mutation-types';
-import FiltersCheckbox from '@/components/tochelinGuide/FiltersCheckbox.vue';
+import { SET_FILTER__TOCHELIN_GUIDE_FILTERS } from '@/store/mutation-types';
+// import FiltersCheckboxs from '@/components/tochelinGuide/FiltersCheckboxs.vue';
+import FiltersButtons from '@/components/tochelinGuide/FiltersButtons.vue';
 
 export default {
   name: 'TochelinGuideFilters',
   components: {
-    FiltersCheckbox,
+    // FiltersCheckboxs,
+    FiltersButtons,
   },
   data() {
     return {
@@ -55,12 +57,14 @@ export default {
       'membership',
       'magnet',
       'nonCommercial',
+      'adultContents',
+      'rookie',
       'status',
     ]),
   },
   methods: {
     ...mapMutations('tochelinGuide/filters', {
-      'toggleFilter': TOGGLE_FILTER__TOCHELIN_GUIDE_FILTERS,
+      'setFilter': SET_FILTER__TOCHELIN_GUIDE_FILTERS,
     }),
     toggleFiltersBox() {
       this.openedFiltersBox = !this.openedFiltersBox;

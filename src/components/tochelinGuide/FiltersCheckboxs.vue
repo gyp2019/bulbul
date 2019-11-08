@@ -11,17 +11,17 @@
           <input
             class="form-check-input"
             type="checkbox"
-            :id="`${name}-${index}`"
+            :id="`${id}-${index}`"
             :checked="filter.checked"
-            @change="$emit('input-checkbox', {
-              name,
+            @change="$emit('set-filter', {
+              id,
               key: filter.key,
               checked: $event.target.checked
             })"
           >
           <label
             class="form-check-label"
-            :for="`${name}-${index}`"
+            :for="`${id}-${index}`"
           >{{ filter.label }}</label>
         </div>
       </div>
@@ -31,13 +31,13 @@
 
 <script>
 export default {
-  name: 'GuideFilterCheckbox',
+  name: 'GuideFilterCheckboxs',
   props: {
     legend: {
       type: String,
       required: true,
     },
-    name: {
+    id: {
       type: String,
       required: true,
     },

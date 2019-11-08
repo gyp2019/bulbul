@@ -16,7 +16,7 @@ const state = {
 const getters = {
   filteredList(state, getters) {
     return _.filter(state.list, (el) => {
-      return _.every(getters['filters/checkedfilters'], (values, key) => !values.length || values.includes(el[key]));
+      return _.every(getters['filters/checkedFilters'], (values, key) => !values.length || values.includes(el[key]));
     });
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <TochelinGuideFilters/>
-    <TochelinGuideTable :list="filteredList"/>
+    <TochelinGuideTable :names="namedFiltes" :list="filteredList"/>
     <TochelinGuideMedia :list="filteredList"/>
     <TochelinGuideCard :list="filteredList"/>
   </div>
@@ -28,6 +28,9 @@ export default {
     ]),
     ...mapGetters('tochelinGuide', [
       'filteredList',
+    ]),
+    ...mapGetters('tochelinGuide/filters', [
+      'namedFiltes',
     ]),
   },
   methods: {
