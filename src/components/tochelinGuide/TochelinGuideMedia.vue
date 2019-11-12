@@ -24,6 +24,6 @@ export default {
 
 <style scoped>
 .media-image {
-  width: 15rem;
+  width: 5rem;
 }
 </style>

@@ -18,7 +18,7 @@ import PillBadges from './PillBadges.vue';
 
 export default {
   name: 'TochelinGuideCard',
-  components:  {
+  components: {
     PillBadges,
   },
   props: {
