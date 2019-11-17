@@ -9,8 +9,9 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">{{ item.toTitle }}</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">{{ item.toTitle }} <a :href="item.toLink" target="_blank" class="btn btn-outline-primary btn-sm">Link</a></h5>
+        <p class="card-text">{{ item.deceptions }}</p>
+        <p class="card-text"><PillBadges :item="item"/></p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
@@ -21,12 +22,12 @@
 </template>
 
 <script>
-// import PillBadges from './PillBadges.vue';
+import PillBadges from './PillBadges.vue';
 
 export default {
   name: 'TochelinGuideCardHorizontal',
   components: {
-    // PillBadges,
+    PillBadges,
   },
   props: {
     list: {
