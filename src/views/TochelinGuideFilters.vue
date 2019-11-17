@@ -6,7 +6,7 @@
     >
       Filter {{ openedFiltersBox ? '&#x025B3;' : '&#x025BD;' }}
     </button>
-    <div v-if="openedFiltersBox" class="p-3">
+    <div v-if="openedFiltersBox" class="bg-light p-3">
       <!-- <FiltersCheckbox
         id="membership"
         :legend="membership.name"
